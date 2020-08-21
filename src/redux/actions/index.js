@@ -3,7 +3,7 @@ export const FETCH_DATA='FETCH_DATA';
 
 
 
-export function fetchPosts(){
+export function fetchData(){
     //console.log("Action sent", request);
     //const request=axios.get(IMAGES);
     return {

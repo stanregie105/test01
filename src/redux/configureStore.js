@@ -1,6 +1,5 @@
 import { createStore, combineReducers} from 'redux';
-import { reducer as formReducer} from 'redux-form';
-import details from './reducerdetail';
+import details from './reducer/reducerdetail';
 import { applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 
@@ -14,10 +13,7 @@ if(process.env.NODE_ENV==='development'){
 export const ConfigureStore=() =>{
     const store = createStore(
     combineReducers({
-         details,
-        ...createForms({
-            feedback: InitialFeedback
-        })
+         details
        }),
        applyMiddleware(...middlewares)
     
