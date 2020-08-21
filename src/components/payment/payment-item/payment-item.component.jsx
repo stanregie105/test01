@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PaymentItem =({detail})=>{
-    const {id,itemType,price,Transaction_no,Time,status}= detail;
+    const {id,itemType,price,Transaction_no,Time,status,sign}= detail;
          return(
               <tr key={id}>
                   <td>{itemType}</td>
@@ -9,6 +9,7 @@ const PaymentItem =({detail})=>{
                   <td>{Transaction_no}</td>
                   <td>{Time}</td>
                   <td>{status}</td>
+                  <td>{sign}</td>
             </tr>
          );
 }
