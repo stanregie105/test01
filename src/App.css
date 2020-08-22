@@ -15,6 +15,7 @@
 .shift{
   display: flex;
   flex-direction: start;
+  width: 20%;
 }
 *{
    box-sizing: border-box;
