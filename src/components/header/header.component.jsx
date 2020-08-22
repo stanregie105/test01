@@ -38,20 +38,19 @@ class Header extends Component{
       <div className='option'>
         FAQ
       </div>
-       <h1>
-        <div>
-          <i className="fas fa-code"></i>
-        </div>
-      </h1>
+      <div className="option">
+          <h2>
+         <i class="far fa-bell"></i>
+         </h2>
+          </div>
        <div className="profile-cover">
+        <img src="/assets/images/javascript.jpg" alt='item'/>
         <div className='profile-details'>
           <span className='name'>Hello</span>
            <span className='price'>
                Stanley
                </span>
        </div>
-               <img src="/assets/images/javascript.jpg" alt='item'/>
-
    </div>
       
     </div>

@@ -4,7 +4,8 @@ import {Sparklines, SparklinesLine, SparklinesReferenceLine} from 'react-sparkli
 
 export default({detail}) =>{
     const {id,data, color,month} = detail;
-    return(
+    console.log(data);
+     return(
         
         
       <div>

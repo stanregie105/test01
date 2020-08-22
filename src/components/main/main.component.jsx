@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import PaymentData from '../payment/paymentdata/paymentdata.component';
 import {fetchData} from '../../redux/actions/index';
 import ChartContainer from '../chart-container/chart-container.component';
+import List from '../list/list.component';
 
 
 
@@ -12,9 +13,14 @@ const Main =({details, fetchData})=>{
 
      },[fetchData]);
     return(
-     <div>
+     <div className="row">
+         <div className="col-sm-3">
+             <List/>
+             </div>
+             <div className="col-sm-9">
          <ChartContainer details={details}/>
          <PaymentData details={details}/>
+         </div>
     </div>
     );
 }
