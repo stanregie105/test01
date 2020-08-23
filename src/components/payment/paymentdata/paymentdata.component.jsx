@@ -1,6 +1,7 @@
 import React,{Fragment} from 'react';
 import PaymentItem from '../payment-item/payment-item.component';
 import Search from '../../search/search.component';
+import ListDropdown from '../../list-dropdown/list-dropdown.component';
 
 
 const PaymentData=({details})=>{
@@ -12,7 +13,7 @@ const PaymentData=({details})=>{
           </div>
       <div className="col-12 col-sm-9">
      <h4> Payments</h4>
-     <p className="show">showing<span className="show-in">20 &#8744;</span>Out of 500 Payments<span><Search/></span></p>
+     <p className="show">showing<span className="show-in">20 &#8744;</span>Out of 500 Payments<span><Search/></span><ListDropdown/></p>
         
   <table className="table table-hover">
                <thead >
