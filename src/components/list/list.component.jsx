@@ -4,6 +4,9 @@ import './list.styles.scss';
 const List =()=>{
     return(
         <Fragment>
+            <div>
+                <button className=" btn-fulll" >Generate Hedge</button>
+            </div>
        <div className="main-top">
            <p>Main</p>
        </div>
